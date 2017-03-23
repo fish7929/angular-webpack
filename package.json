@@ -1,0 +1,50 @@
+{
+  "name": "angular-seed",
+  "version": "1.0.0",
+  "description": "study angular use webpack build",
+  "main": "index.js",
+  "scripts": {
+    "build:watch": "tsc -p src/ -w",
+    "serve": "lite-server -c=bs-config.json",
+    "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fish7929/angular-webpack.git"
+  },
+  "keywords": [
+    "angular2"
+  ],
+  "author": "fishYu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fish7929/angular-webpack/issues"
+  },
+  "homepage": "https://github.com/fish7929/angular-webpack#readme",
+  "dependencies": {
+    "@angular/common": "^2.4.10",
+    "@angular/compiler": "^2.4.10",
+    "@angular/core": "^2.4.10",
+    "@angular/forms": "^2.4.10",
+    "@angular/http": "^2.4.10",
+    "@angular/platform-browser": "^2.4.10",
+    "@angular/platform-browser-dynamic": "^2.4.10",
+    "@angular/platform-server": "^2.4.10",
+    "@angular/router": "^3.4.10",
+    "angular-in-memory-web-api": "^0.3.1",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.2.0",
+    "systemjs": "^0.20.10",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "lite-server": "^2.3.0",
+    "typescript": "^2.2.1",
+    "webpack": "^2.3.1",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-merge": "^4.1.0"
+  }
+}
